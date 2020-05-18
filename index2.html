@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>出張</title>
+	<meta name="description" content="Airbnb-出張">
+	<!----favicon----->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<!---fontawesome---->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<!----foundation icons fonts3--->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+	<!----font------->
+	<link href="https://fonts.googleapis.com/css?family=Kosugi|Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+	<!---stylesheet------>
+	<link rel="stylesheet" href="https://unpkg.com/ress@2.0.4/dist/ress.min.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!---bootstrap---->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script>
+		
+
+		
+		$(function() {
+			$('.video_btn').click(function() {
+		        if($('#video')[0].paused){
+		          $('#video')[0].play();
+		          $('.video_btn').html('<span>停止<svg style="height: 18px; width: 18px; margin-left:7px;"><path d="m0 1.01c0-.56.44-1.01 1.01-1.01h1.98c.56 0 1.01.45 1.01 1.01v11.98c0 .56-.44 1.01-1.01 1.01h-1.98c-.56 0-1.01-.45-1.01-1.01zm7 0c0-.56.44-1.01 1.01-1.01h1.98c.56 0 1.01.45 1.01 1.01v11.98c0 .56-.44 1.01-1.01 1.01h-1.98c-.56 0-1.01-.45-1.01-1.01z"></path></svg></span>');
+		        }else{
+		          $('#video')[0].pause();
+		          $('.video_btn').html('<span>再生<svg style="height: 18px; width: 18px; margin-left:7px"><path d="m0 .63c0-.51.57-.81.99-.52l9.64 6.17c.49.35.49 1.08 0 1.43l-9.64 6.17c-.42.3-.99 0-.99-.52z"></path></svg></span>');
+		        }
+		    });
+		});
+
+	</script>
+</head>
+<body>
+	<header class="ly-header">
+		<div class="ly-logo">
+			<a class="logo" href="#"><img src="images/logo3.png"></a>
+		</div>
+		
+		<div class="ly-top-nav">
+			<nav class="top-nav">
+				<ul>
+					<li><a href="#" class="top-nav-btn"><img src="images/internet.png">日本語(JP)</a></li>
+					<li><a href="#" class="top-nav-btn">&yen;JYP</a></li>
+					<li><a href="#" class="top-nav-btn">ホストをはじめる</a></li>
+					<li><a href="#" class="top-nav-btn">ヘルプ</a></li>
+					<li><a href="#" class="top-nav-btn">登録する</a></li>
+					<li><a href="#" class="top-nav-btn">ログイン</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-----ドロワーメニュー----->	
+	<div class="label-wrap">
+		<input type="checkbox" id="navTgl"><!--ボタンのスイッチ的役割----->
+		<label for="navTgl" class="staybtn"></label>
+		<label for="navTgl" class="open"></label>
+		<div class="dr-nav_bg"></div>
+
+		<nav class="drower-menu">
+			<ul class="drower-menu-nav drower-summary">
+				<li><a href="#">ホーム</a></li>
+			</ul>
+			<hr class="border-gray" width="93%">
+			<ul class="drower-menu-nav">
+				<li><a href="#">友達を招待する</a></li>
+				<li><a href="#">ホストを紹介</a></li>
+				<li><a href="#">Airbnbビジネスプログラム</a></li>
+			</ul>
+			<hr class="border-gray" width="93%">
+			<ul class="drower-menu-nav">
+				<li><a href="#">
+					<div class="nav_block">言語<div class="nav-sub">日本語(JP)</div></div>
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="height: 26px; width: 26px; display: block; fill: currentcolor; float:right"><path d="m11 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.95-1.07-.14-.21a6.54 6.54 0 0 1 -.29-.5 12.85 12.85 0 0 1 -.66-1.47c-.09-.25-.17-.5-.25-.76h4.57c-.08.26-.16.51-.25.76a12.85 12.85 0 0 1 -.66 1.47 6.54 6.54 0 0 1 -.29.5l-.14.21c-.31.04-.63.07-.95.07s-.64-.03-.95-.07zm-2.03-6.93h5.95a14.71 14.71 0 0 1 -.41 3h-5.13a14.71 14.71 0 0 1 -.41-3zm .47-4h5.01c.27.88.43 1.88.47 3h-5.95c.04-1.12.2-2.12.47-3zm4.8 10.61a13.85 13.85 0 0 0 1.04-2.61h2.4a7.01 7.01 0 0 1 -3.44 2.61zm4.02-3.61h-2.73c.22-.96.35-1.96.38-3h3.02a6.96 6.96 0 0 1 -.68 3zm-2.34-4a12.86 12.86 0 0 0 -.44-3h2.2a6.95 6.95 0 0 1 1.18 3zm .92-4h-1.68c-.08-.22-.16-.45-.26-.65a8.38 8.38 0 0 0 -.49-.9 7 7 0 0 1 2.43 1.55zm-4.04-1.94.3.3c.05.04.14.15.26.32a6.8 6.8 0 0 1 .64 1.1c.03.07.06.15.09.23h-4.28c.03-.07.06-.15.09-.23a6.78 6.78 0 0 1 .64-1.1c.13-.17.22-.28.26-.32l.3-.3a7.04 7.04 0 0 1 .85-.06c.29 0 .57.02.85.06zm-3.31.4c-.16.25-.32.54-.49.9-.1.21-.17.43-.26.65h-1.68a7 7 0 0 1 2.43-1.55zm-3.28 2.55h2.2c-.25.9-.4 1.9-.44 3h-2.94a6.95 6.95 0 0 1 1.18-3zm1.76 4c .03 1.04.17 2.04.38 3h-2.73a6.96 6.96 0 0 1 -.68-3zm-1.02 4h1.66a13.85 13.85 0 0 0 1.04 2.61 7.01 7.01 0 0 1 -3.44-2.61zm6 5.95v3.05h3.5a.5.5 0 1 1 0 1h-7.93a.5.5 0 0 1 0-1h3.43v-3c-2.12 0-4.15-.66-5.89-1.89a.5.5 0 0 1 .58-.82c1.58 1.11 3.4 1.71 5.31 1.71a9 9 0 0 0 9-9c0-3.34-1.83-6.38-4.75-8.07a.5.5 0 0 1 .5-.86c3.22 1.87 5.25 5.23 5.25 8.93 0 5.19-3.95 9.45-9 9.95z" fill-rule="evenodd"></path></svg></a></li>
+				<li><a href="#"><div class="nav_block">通貨<div class="nav-sub">&yen;JPY</div></div></a></li>
+			</ul>
+			<hr class="border-gray" width="93%">
+			<ul class="drower-menu-nav">
+				<li><a href="#"><div class="nav_block">お部屋を掲載<div class="nav-sub"><span style="font-weight:bold;">月あたり最大&yen;90,777</span>の収益</div></div>
+					<svg viewBox="0 0 26 24" aria-hidden="true" focusable="false" style="height: 44px;width: 44px;display: block;fill: #1fabaf; float:right"><path d="m12 10a2.49 2.49 0 0 1 -1.3 2.18 4.53 4.53 0 0 1 2.47 1.74 3.53 3.53 0 0 1 1.19-.72 2.5 2.5 0 1 1 2.29 0 3.5 3.5 0 0 1 2.35 3.3v1.5h2.5a.49.49 0 0 0 .5-.48v-11.03a.97.97 0 0 0 -.43-.75l-5.14-3a .96.96 0 0 0 -.86 0l-5.14 3a .95.95 0 0 0 -.43.76v1.05a2.5 2.5 0 0 1 2 2.45z"></path><path d="m25.43 6.26a.5.5 0 0 1 -.69.17l-1.74-1.05v-4.38q-2 0-2 .01v2.16a.55.55 0 0 1 -.85.47l-3.99-2.45a.43.43 0 0 0 -.33 0l-7.56 4.62a.5.5 0 0 1 -.52-.85l7.56-4.62a1.4 1.4 0 0 1 1.38 0l3.32 2.03v-1.36a1 1 0 0 1 .98-1.01h2.02a1 1 0 0 1 .99.99v3.83l1.26.75a.5.5 0 0 1 .17.69zm-1.93 1.74a.5.5 0 0 0 -.5.5v10.5h-1.5a.5.5 0 0 0 0 1h1.9a.61.61 0 0 0 .6-.6v-10.9a.5.5 0 0 0 -.5-.5zm-4.5 8.5v3.5h-1v-3.5a2.49 2.49 0 0 0 -4.34-1.68 4.41 4.41 0 0 1 .34 1.68v3.5h-1v-3.5a3.46 3.46 0 0 0 -.5-1.77 3.5 3.5 0 0 0 -2.5-1.69 3.45 3.45 0 0 0 -.5-.04 3.54 3.54 0 0 0 -3.5 3.5v3.5h-1v-3.5a4.41 4.41 0 0 1 .34-1.68 2.49 2.49 0 0 0 -4.34 1.68v3.5h-1v-3.5a3.5 3.5 0 0 1 2.35-3.29 2.5 2.5 0 1 1 2.29 0 3.53 3.53 0 0 1 1.19.72 4.53 4.53 0 0 1 2.47-1.74 2.5 2.5 0 1 1 2.39 0 4.53 4.53 0 0 1 2.47 1.74 3.53 3.53 0 0 1 1.19-.72 2.5 2.5 0 1 1 2.29 0 3.5 3.5 0 0 1 2.36 3.29zm-14-5.5a1.5 1.5 0 1 0 -1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zm6-1a1.5 1.5 0 0 0 -1-1.41 1.48 1.48 0 0 0 -.5-.09 1.5 1.5 0 0 0 0 3 1.48 1.48 0 0 0 .5-.09 1.5 1.5 0 0 0 1-1.41zm6 1a1.5 1.5 0 1 0 -1.5 1.5 1.5 1.5 0 0 0 1.5-1.5z" fill="#484848"></path></svg></a></li>
+				<li><a href="#">お家のホスティングについて</a></li>
+				<li><a href="#"><div class="nav_block">好きをホストする<div class="nav-sub">好きを仕事に</div></div></a></li>
+			</ul>
+			<hr class="border-gray" width="93%">
+			<ul class="drower-menu-nav">
+				<li><a href="#">ヘルプ</a></li>
+				<li><a href="#">登録する</a></li>
+				<li><a href="#">ログイン</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!--------ここまで---->
+
+	<div class="ly-home">
+		<div class="ly-video"><!---ビデオ--->
+
+			<button class="video_btn"><span>停止<svg  style="height: 18px; width: 18px; margin-left:7px"><path d="m0 1.01c0-.56.44-1.01 1.01-1.01h1.98c.56 0 1.01.45 1.01 1.01v11.98c0 .56-.44 1.01-1.01 1.01h-1.98c-.56 0-1.01-.45-1.01-1.01zm7 0c0-.56.44-1.01 1.01-1.01h1.98c.56 0 1.01.45 1.01 1.01v11.98c0 .56-.44 1.01-1.01 1.01h-1.98c-.56 0-1.01-.45-1.01-1.01z"></path></svg></span></button>
+			
+			<video id="video" src="images/6fe357d4e08e5401a90ab38a6e71ab27_4000k_2.webm" autoplay loop muted></video>
+		</div>
+
+		<div class="ly-pagehome">
+			<div class="ly-page-titles">
+				<h1>世界の果てまで、アットホーム</h1>
+				<a href="#">airbnbビジネスプログラムの動画を見る<span class="play_btn">▶︎</span></a>
+			</div>
+
+			<div class="ly-email">
+				<p>まずは仕事用メールアドレスの入力から</p>
+				<div class="ly-email_input page-top_wrap">
+					<input for="ly-email_input"class="email" type="email" placeholder=" ">
+					<a href="#" class="email_btn" for="input">メールアドレスを追加</a>
+					<div class="ly-email-wrap" for="ly-email_input"></div>
+				</div>
+			</div>
+
+			<div class="ly-more ly-more_top">
+				<p>出張管理をご担当ですか？</p>
+				<a href="#" class="a_with_arrow arrow_green">もっと詳しく</a>
+			</div>
+		</div>
+		<hr class="border-gray" width="93%">
+	</div>
+
+	<div class="ly-prepares">
+		<h2 class="ly-prepares-title">最高の仕事に必要なものすべてを完備</h2>
+		<div class="ly-prepares-points">
+			<div class="ly-hotel">
+				<img src="images/hotel.jpg">
+				<p>高評価の宿泊先＆デザイナーズホテル</p>
+			</div>
+			<div class="ly-team">
+				<img src="images/team.jpg">
+				<p>チームビルディング体験</p>
+			</div>
+			<div class="ly-collabo">
+				<img src="images/collaborate.jpg">
+				<p>コラボを育むスペース</p>
+			</div>
+		</div>
+
+		<hr class="border-gray" width="93%">
+	</div>
+
+	<div class="ly-promo">
+		<div class="row ly-promo-grid ly-athome">
+			<div class="col-md-5 ly-img-athome ly-img-grid">
+				<img src="images/athome.jpg">
+			</div>
+			<div class="col-md-7 ly-text-athome ly-text-grid">
+				<div class="el-text-centering">
+					<h2 class="grid-title">出張先でも、アットホーム</h2>
+					<p class="grid-summary">出張のときも、新天地に異動のときも安心。他の出張者が5つ星評価をつけたお部屋やデザイナーズホテルを探しましょう。</p>
+					<a href="#" class="a_with_arrow arrow_green">仕事用スペースを完備した宿泊先を検索</a>
+				</div>
+			</div>
+		</div>
+		<div class="row ly-promo-grid ly-team_building">
+			<div class="col-md-7 ly-text-grid ly-text-team_building">
+				<div class="el-text-centering">
+					<h2 class="grid-title">チームの心をひとつに</h2>
+					<p class="grid-summary">ラーメン作り教室やカヌーレッスンに参加。普段オフィスでは目にできない同僚たちの意外な面に触れ、深いレベルでつながれます。</p>
+					<a href="#" class="a_with_arrow arrow-white" >Airbnbの「体験」を検索</a>
+				</div>
+			</div>
+			<div class="col-md-5 ly-img-grid ly-img-team_building ">
+				<img src="images/team_building.jpg">
+			</div>
+		</div>
+		<div class="row ly-promo-grid ly-creativity ">
+			<div class="col-md-5 ly-img-grid ly-img-creativity">
+				<img src="images/creativity.jpg">
+			</div>
+			<div class="col-md-7 ly-text-grid ly-text-creativity">
+				<div class="el-text-centering">
+					<h2 class="grid-title">創造力をかきたてるスペース</h2>
+					<p class="grid-summary">煮詰まったら1日オフサイトで気分を変えてみませんか？ひらめきが湧く環境で、チームの生産性を高めましょう。</p>
+					<a href="#" class="a_with_arrow arrow_green">Wi-Fi完備の宿泊先を見る</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ly-services">
+		<div class="ly-system">
+			<h2>安全第一のシステム</h2>
+			<p>セキュアな支払いシステムから経験者のレビューまで、Airbnbは安全中心のシステムです。</p>
+			<a href="#" class="a_with_arrow arrow_white">もっと詳しく</a>
+		</div>
+		<hr class="border-white" width="90%">
+		<div class="ly-support">
+			<h2>グローバルカスタマーサポート</h2>
+			<p>専門スタッフが、年中無休で営業時間内に11言語でサポートいたします。</p>
+			<a href="#" class="a_with_arrow arrow_white">もっと詳しく</a>
+		</div>
+	</div>
+
+	<div class="ly-ctmcomment">
+		<div class="ly-ctmcomment-img">
+			<img src="images/comment.jpg">
+		</div>
+		<div class="ly-ctmcomment-text">
+			<div class="el-text-centering">
+				<p class="ctn_comment">「Airbnbは自活できるのがいいですね。毎晩外食しなくても、みんなで好きなものを料理できるし、とても出張とは思えないほど現地に根を下ろせます」</p>
+				<p class="ctn_name">MARTA KUTT様</p>
+				<p class="ctn_company">Transferwise社マネジャー</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="ly-promotion">
+		<div class="promo-centering">
+			<h2>働き方を変えたいなら、Airbnbです</h2>
+			<div class="ly-email">
+				<p class="font_bold">まずは仕事用メールアドレスの入力から</p>
+				<div class="ly-email_input promo-bottom_wrap">
+					<input for="ly-email_input"class="email" type="email" placeholder=" ">
+					<a href="#" class="email_btn" for="input">メールアドレスを追加</a>
+					<div class="ly-email-wrap" for="ly-email_input"></div>
+				</div>
+			</div>
+			<hr class="border-gray" width="70%">
+			<div class="ly-more ly-more_bottom">
+				<p class="font_bold">出張管理をご担当ですか？</p>
+				<p>こんなにある、Airbnbビジネスプログラム法人企業様のメリット。</p>
+				<a href="#" class="a_with_arrow arrow_green a_more">もっと詳しく</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="ly-bottomnav">
+		<div class="row bottomnav">
+			<div class="col-3">
+					<p>Airbnb</p>
+					<ul>
+						<li><a href="#">採用情報</a></li>
+						<li><a href="#">ニュース</a></li>
+						<li><a href="#">ポリシー</a></li>
+						<li><a href="#">ダイバーシティ＆ビロンギング</a></li>
+						<li><a href="#">アクセシビリティ対応</a></li>
+						<li><a href="#">企業情報</a></li>
+					</ul>
+			</div>
+			<div class="col-3">
+					<p>スタッフのおすすめ</p>
+					<ul>
+						<li><a href="#">信頼＆安全</a></li>
+						<li><a href="#">お友達紹介クーポン</a></li>
+						<li><a href="#">Airbnb Citizen</a></li>
+						<li><a href="#">出張</a></li>
+						<li><a href="#">アクティビティ</a></li>
+						<li><a href="#">Airbnbmag</a></li>
+					</ul>
+				</div>
+			<div class="col-3">
+					<p>ホスティング</p>
+					<ul>
+						<li><a href="#">おもてなしの心</a></li>
+						<li><a href="#">ホストの責任</a></li>
+						<li><a href="#">コミュニティセンター</a></li>
+						<li><a href="#">体験を掲載</a></li>
+						<li><a href="#">オープンホーム</a></li>
+						<li><a href="#">リソースセンター<span class="badge badge-secondary"> 新着</span></a></li>
+					</ul>
+				</div>
+			<div class="col-3">
+					<p>サポート</p>
+					<ul>
+						<li><a href="#">ヘルプ</a></li>
+						<li><a href="#">エリアサポート<span class="badge badge-secondary">新着</span></a></li>
+					</ul>
+				</div>
+		</div><!-----/.bottomnav-------->
+
+		<footer>
+			<hr width="100%" color="#ebebeb" noshade class="border-gray">
+			<div class="ly-footer">
+				<div class="left">
+					<img src="images/logo2.png">
+					<div class="info">
+						<a href="#">Airbnb Global Services Limited<br/>
+						観光庁長官(01)第S0001号(2018年6月15日-2013年6月14日)</a>
+						<p>&copy;2020 Airbnb,Inc.All rights reserved. <a href="#" class="less">利用規約</a><span>・</span><a href="#" class="less">プライバシー</a><span>・</span><a href="#" class="less">サイトマップ</a></p>
+					</div>
+				</div><!---left--->
+
+				<div class="right">
+					<a class="ico" href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+
+					<a class="ico" href="#"><i class="fab fa-twitter fa-lg" ></i></a>
+
+					<a class="ico" href="#"><i class="fab fa-instagram fa-lg"></i></a>
+				</div><!---right-->
+			</div><!-----/.cat-bottom------->
+		</footer>
+	</div><!---/.ly-bottomnav-------->
+	<script src="script.js"></script>
+</body>
+</html>
